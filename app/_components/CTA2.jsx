@@ -18,12 +18,12 @@ function CTA2() {
           </h2>
 
           <p className="hidden text-xl text-white md:mt-4 md:block">
-            "If it doesn't work for someone, <br />it doesn't work."
+          &#34; If it doesn&#39;t work for someone, <br />it doesn&#39;t work &#34;
             <br />
             <br />
             When a client approaches us, this is <br />
             the maxim we use to examine all probable
-            <br /> solutions - and we're confident that
+            <br /> solutions - and we&#39;re confident that
             <br /> our dedication can make a difference.
           </p>
 

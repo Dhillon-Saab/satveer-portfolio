@@ -43,21 +43,21 @@ function Navbar() {
                   Home
                 </Link>
                 <Link
-                  href="/"
+                  href="/works"
                   className="shrink-0 rounded-lg p-2 text-sm font-medium text-white hover:bg-gray-50 hover:text-gray-700"
                 >
                   Our Work
                 </Link>
 
                 <Link
-                  href="/"
+                  href="/services"
                   className="shrink-0 rounded-lg p-2 text-sm font-medium text-white hover:bg-gray-50 hover:text-gray-700"
                 >
                   Our Services
                 </Link>
 
                 <Link
-                  href="/"
+                  href="/contactUs"
                   className="shrink-0 rounded-lg bg-sky-100 p-2 text-sm font-medium text-navbar-bg"
                   aria-current="page"
                 >
