@@ -8,10 +8,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "navbar-bg" : "#123033",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
     },
+    fontFamily: {
+      'Josefin-Sans' : ['Josefin Sans'],
+    }
   },
   plugins: [],
 };
