@@ -49,7 +49,7 @@ function Navbar() {
 
               {
                 ["/", "/works", "/services", "/contactUs"].map((path)=>(
-                  <Link key={path} href={path} className={`${path === pathname ? 'bg-sky-100 p-2 text-sm font-medium text-navbar-bg' : 'p-2 text-sm font-medium text-white hover:bg-gray-50 hover:text-gray-700'} shrink-0 rounded-lg`}>
+                  <Link key={path} href={path} className={`${path === pathname ? 'bg-white p-2 text-sm font-bold text-navbar-bg' : 'p-2 text-sm font-medium text-white hover:bg-gray-50 hover:text-gray-700'} shrink-0 rounded-lg`}>
                     {path === '/' ? "Home" : path.substring(1).charAt(0).toUpperCase() + path.substring(2)}
                   </Link>
                 ))
