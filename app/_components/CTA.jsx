@@ -19,7 +19,7 @@ function CTA() {
           <div className="mt-4 md:mt-8">
             <a
               href="/services"
-              className="inline-block rounded bg-navbar-bg px-12 py-3 text-sm font-medium text-white transition hover:bg-slate-600 focus:outline-none focus:ring focus:ring-yellow-400"
+              className="inline-block rounded bg-navbar-bg px-12 py-3 text-lg font-medium text-white transition hover:bg-slate-600 focus:outline-none focus:ring focus:ring-yellow-400"
             >
               View our Services
             </a>

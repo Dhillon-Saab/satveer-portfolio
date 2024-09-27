@@ -1,5 +1,6 @@
 import Image from "next/image";
 import CTA from "./_components/CTA";
+import CTA2 from "./_components/CTA2";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
           </div>
         </div> */}
         <CTA />
+        <CTA2 />
       </section>
     </div>
   );
