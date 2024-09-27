@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CTA from "./_components/CTA";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
             <p className="mt-10 text-xl">Empower. Innovate. Transform.</p>
           </div>
         </div>
-        <div className="flex">
+        {/* <div className="flex">
           <Image src={"/pic1.webp"} height={1000} width={1000} alt="" className="w-full" />
           <div className="flex flex-col justify-start items-center p-28 pl-2">
             <h1 className="text-4xl font-Josefin-Sans">Working together to create a better tomorrow.</h1>
@@ -26,7 +27,8 @@ export default function Home() {
               putting the user at the centre of our design to collaborate.
             </p>
           </div>
-        </div>
+        </div> */}
+        <CTA />
       </section>
     </div>
   );
