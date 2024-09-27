@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <section className="bg-gray-50">
-        <div className="bg-navbar-bg p-10 mx-auto text-white text-center">
+        <div className="p-10 object-center bg-cover mx-auto text-white text-center bg-[url('/banner_bg.png')]">
           <div>
             <Image
               src={"/headPage.webp"}

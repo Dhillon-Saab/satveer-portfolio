@@ -8,11 +8,11 @@ export default function contactUs() {
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className="lg:col-span-2 lg:py-12">
             <h2 className="text-4xl font-bold font-Josefin-Sans text-white md:text-4xl">
-              Together, let's build a more compassionate future.
+              Together, let&#39;s build a more compassionate future.
             </h2>
             <p className="max-w-xl text-white text-lg">
               Your staff and customers deserve the best that you can give them.
-              Let's build it together.
+              Let&#39;s build it together.
             </p>
 
             <ul className="mt-24 p-6 flex justify-center gap-6 sm:mt-0 lg:justify-start">
