@@ -11,7 +11,7 @@ function Contributions() {
 
         <div className="flex gap-4 mt-10">
           <span className="text-lg justify-center items-center mx-auto  font-black sm:text-sm lg:text-sm">
-            <Image src={"/banner.png"} alt="" height={1000} width={1000} className="w-full"/>
+            <Image src={"/grid.png"} alt="our trusted ones" height={1000} width={1000} className="w-full"/>
           </span>
         </div>
       </div>
