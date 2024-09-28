@@ -197,14 +197,14 @@ export default function contactUs() {
             </ul>
           </div>
 
-          <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+          <div className="rounded-lg bg-gray-200 p-8 shadow-lg lg:col-span-3 lg:p-12">
             <form action="#" className="space-y-4">
               <div>
                 <label className="sr-only" htmlFor="name">
                   Name
                 </label>
                 <input
-                  className="w-full rounded-lg border border-black p-3 text-sm"
+                  className="w-full rounded-lg bg-gray-200 border border-black p-3 text-sm"
                   placeholder="Name"
                   type="text"
                   id="name"
@@ -218,7 +218,7 @@ export default function contactUs() {
                     Email
                   </label>
                   <input
-                    className="w-full rounded-lg border border-black p-3 text-sm"
+                    className="w-full rounded-lg bg-gray-200 border border-black p-3 text-sm"
                     placeholder="Email address"
                     type="email"
                     id="email"
@@ -231,7 +231,7 @@ export default function contactUs() {
                     Phone
                   </label>
                   <input
-                    className="w-full rounded-lg border border-black p-3 text-sm"
+                    className="w-full rounded-lg border bg-gray-200 border-black p-3 text-sm"
                     placeholder="Phone Number"
                     type="tel"
                     id="phone"
@@ -245,7 +245,7 @@ export default function contactUs() {
                 </label>
 
                 <textarea
-                  className="w-full rounded-lg border border-black p-3 text-sm"
+                  className="w-full rounded-lg border bg-gray-200 border-black p-3 text-sm"
                   placeholder="Message"
                   rows="8"
                   id="message"
