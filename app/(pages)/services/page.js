@@ -7,7 +7,7 @@ export default function services() {
   return (
     <div className="">
       <PostCard />
-      <div className="flex bg-navbar-bg text-black gap-10 justify-center">
+      <div className="flex flex-col bg-navbar-bg text-black gap-10 justify-center md:flex-row">
         <div className="m-10 bg-gray-100 drop-shadow-md shadow-lg p-32 rounded-3xl">
           <Image src={"/edit_.png"} alt="" height={200} width={200} className="w-auto h-56" />
           <h2 className="font-Josefin-Sans text-xl">Empowering</h2>
