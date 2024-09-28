@@ -9,7 +9,7 @@ function CTA2() {
         width={1000}
         alt=""
         src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        className="h-56 w-auto object-cover sm:h-full sm:w-10/12 col-span-2 "
+        className="h-56 object-cover sm:h-full sm:w-10/12 col-span-2 "
       />
       <div className="p-8 md:p-12 lg:px-16 lg:py-24 w-full">
         <div className="mx-auto text-start ltr:sm:text-left rtl:sm:text-right">
