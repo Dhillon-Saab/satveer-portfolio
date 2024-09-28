@@ -2,10 +2,13 @@ import Image from "next/image";
 import CTA from "./_components/CTA";
 import CTA2 from "./_components/CTA2";
 import Contributions from "./_components/Contributions";
+import Navbar from "./_components/Navbar";
+import Footer from "./_components/Footer";
 
 export default function Home() {
   return (
     <div>
+      <Navbar />
       <section className="bg-gray-50">
         <div className="p-10 object-center bg-cover mx-auto text-white text-center bg-navbar-bg md:bg-[url('/banner_bg.png')]">
           <div>
@@ -34,6 +37,7 @@ export default function Home() {
         <CTA2 />
         <Contributions />
       </section>
+      <Footer />
     </div>
   );
 }
