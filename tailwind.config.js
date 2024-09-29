@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         "navbar-bg" : "#123033",
+        "darker" : "#102424",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
