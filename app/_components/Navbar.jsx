@@ -8,31 +8,28 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
-  const toggleMenu = () => setIsOpen(!isOpen);
-
   return (
     <header className=" z-20 bg-navbar-bg sticky top-0 overflow-hidden drop-shadow-lg shadow-md">
       <div className="mx-auto  max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <div className="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">
-          <div>
-            <h1 className="text-4xl font-bold text-gray-900 sm:text-3xl">
-              <Link href={"/"}>
-                <Image
-                  src={"/logo.webp"}
-                  alt="DesignLok Logo"
-                  height={110}
-                  width={110}
-                  style={{ width: "auto", height: "auto" }}
-                  className="justify-center items-center mx-auto w-full sm:justify-start sm:items-start"
-                />
-              </Link>
-            </h1>
-
-            <p className="mt-1.5 text-sm text-gray-500"></p>
+          <div className="w-full md:w-auto">
+            <Link
+              href={"/"}
+              className="text-4xl font-bold text-gray-900 md:w-auto sm:text-3xl"
+            >
+              <Image
+                src={"/logo.webp"}
+                alt="DesignLok Logo"
+                height={110}
+                width={110}
+                style={{ width: "auto", height: "auto" }}
+                className="justify-center items-center md:w-full mx-auto md:mx-0 sm:justify-start sm:items-start"
+              />
+            </Link>
           </div>
 
-          <div className="flex items-center gap-4">
-            <button
+          <div className="flex items-center gap-4 w-full md:w-auto">
+            {/* <button
               onClick={toggleMenu}
               className="text-white inline-block md:hidden"
             >
@@ -43,13 +40,9 @@ function Navbar() {
                   d="M4 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2z"
                 />
               </svg>
-            </button>
+            </button> */}
 
-            <div
-              className={`${
-                isOpen ? "hidden" : "block"
-              } flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 gap-7`}
-            >
+            <div className={`flex flex-row space-x-8 mt-0 gap-7 mx-auto md:mx-0`}>
               <nav className="flex gap-6" aria-label="Tabs">
                 {["/", "/works", "/services", "/contactUs"].map((path) => (
                   <Link
