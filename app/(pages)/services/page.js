@@ -8,7 +8,7 @@ export default function services() {
     <div className="">
       <PostCard />
       <div className="flex flex-col bg-navbar-bg text-black gap-10 justify-center md:flex-row">
-        <div className="m-10 bg-gray-100 drop-shadow-md shadow-lg p-32 rounded-3xl">
+        <div className="m-10 bg-gray-100 drop-shadow-md shadow-lg p-32 md:w-full rounded-3xl">
           <Image src={"/edit_.png"} alt="" height={200} width={200} className="w-auto h-56" />
           <h2 className="font-Josefin-Sans text-xl">Empowering</h2>
           <p>
@@ -26,10 +26,10 @@ export default function services() {
             </span>
           </Link>
         </div>
-        <div className="m-10 bg-gray-100 drop-shadow-md shadow-lg p-32 rounded-3xl">
+        <div className="m-10 bg-gray-100 drop-shadow-md shadow-lg p-32 md:w-full rounded-3xl">
         <Image src={"/innovation-9648.svg"} alt="" height={100} width={100} className="w-auto h-48"  />
           <h2 className="font-Josefin-Sans text-xl">Innovative</h2>
-          <p>Branding builds lasting value - aligning you with stakeholders</p>
+          <p className="">Branding builds lasting value - aligning you with stakeholders</p>
           <Link
             className="mt-5 group relative inline-block text-sm font-medium text-white focus:outline-none focus:ring"
             href="#"
@@ -40,7 +40,7 @@ export default function services() {
             </span>
           </Link>
         </div>
-        <div className="m-10 bg-gray-100 drop-shadow-md shadow-lg  p-32 rounded-3xl">
+        <div className="m-10 bg-gray-100 drop-shadow-md shadow-lg  md:w-full p-32 rounded-3xl">
         <Image src={"/transforming.png"} alt="" height={100} width={100} className="w-auto h-52 "  />
 
           <h2 className="font-Josefin-Sans text-xl">Transforming</h2>
