@@ -1,20 +1,11 @@
-"use client"
 import PostCard from "@/app/_components/PostCard";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 export default function services() {
-
-  
-  const [load, onLoad] = useState(false);
-
-  useEffect(() => {
-    onLoad(true);
-  }, []);
-
   return (
-    <div className={`${load? 'opacity-100' : 'opacity-0'} transition-all duration-500 delay-100`}>
+    <div className="">
       <PostCard />
       <div className="flex flex-col bg-navbar-bg text-black gap-10 justify-center md:flex-row">
         <div className="m-10 bg-gray-100 drop-shadow-md shadow-lg p-32 rounded-3xl">
