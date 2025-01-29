@@ -9,7 +9,7 @@ export default function services() {
       <PostCard />
       <div className="flex flex-col bg-navbar-bg text-black gap-10 justify-center md:flex-row">
         <div className="m-10 bg-gray-100 drop-shadow-md shadow-lg p-32 md:w-full rounded-3xl">
-          <Image src={"/edit_.png"} alt="" height={200} width={200} className="w-auto h-56" />
+          <Image src={"/edit_.png"} alt="" height={500} width={500} className="w-auto h-56" />
           <h2 className="font-Josefin-Sans text-xl">Empowering</h2>
           <p>
             There is never failure, only optimization. We evaluate your goals
@@ -20,8 +20,8 @@ export default function services() {
             className="mt-5 group relative inline-block text-sm font-medium text-white focus:outline-none focus:ring"
             href="#"
           >
-            <span class="absolute inset-0 border border-navbar-bg group-active:border-navbar-bg"></span>
-            <span class="block border border-navbar-bg bg-navbar-bg px-12 py-3 transition-transform active:border-navbar-bg active:bg-slate-500 group-hover:-translate-x-1 group-hover:-translate-y-1">
+            <span className="absolute inset-0 border border-navbar-bg group-active:border-navbar-bg"></span>
+            <span className="block border border-navbar-bg bg-navbar-bg px-12 py-3 transition-transform active:border-navbar-bg active:bg-slate-500 group-hover:-translate-x-1 group-hover:-translate-y-1">
               Case Study
             </span>
           </Link>
@@ -34,8 +34,8 @@ export default function services() {
             className="mt-5 group relative inline-block text-sm font-medium text-white focus:outline-none focus:ring"
             href="#"
           >
-            <span class="absolute inset-0 border border-navbar-bg group-active:border-navbar-bg"></span>
-            <span class="block border border-navbar-bg bg-navbar-bg px-8 py-3 transition-transform active:border-navbar-bg active:bg-slate-500 group-hover:-translate-x-1 group-hover:-translate-y-1">
+            <span className="absolute inset-0 border border-navbar-bg group-active:border-navbar-bg"></span>
+            <span className="block border border-navbar-bg bg-navbar-bg px-8 py-3 transition-transform active:border-navbar-bg active:bg-slate-500 group-hover:-translate-x-1 group-hover:-translate-y-1">
               Case Study
             </span>
           </Link>
@@ -52,8 +52,8 @@ export default function services() {
             className="mt-5 group relative inline-block text-sm font-medium text-white focus:outline-none focus:ring"
             href="#"
           >
-            <span class="absolute inset-0 border border-navbar-bg group-active:border-navbar-bg"></span>
-            <span class="block border border-navbar-bg bg-navbar-bg px-12 py-3 transition-transform active:border-navbar-bg active:bg-slate-500 group-hover:-translate-x-1 group-hover:-translate-y-1">
+            <span className="absolute inset-0 border border-navbar-bg group-active:border-navbar-bg"></span>
+            <span className="block border border-navbar-bg bg-navbar-bg px-12 py-3 transition-transform active:border-navbar-bg active:bg-slate-500 group-hover:-translate-x-1 group-hover:-translate-y-1">
               Case Study
             </span>
           </Link>

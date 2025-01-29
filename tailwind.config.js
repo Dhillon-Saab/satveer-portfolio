@@ -16,6 +16,7 @@ module.exports = {
     },
     fontFamily: {
       'Josefin-Sans' : ['Josefin Sans'],
+      'Lora' : ['Lora'],
     }
   },
   plugins: [],
