@@ -12,7 +12,7 @@ function AboutProjectDetails() {
         <p className="text-lg text-left mt-3 mr-10 space-y-4 space-x-4 font-Josefin-Sans ">
           Aggüdo Coffee is a Black-Owned Coffee Shop that provides Ethiopian
           Coffee. Aggüdo comes from the Amharic word, መዐቆቢ, which translates to
-          'Haven', The owner's intent is to continue to provide a safe space for
+          &apos;Haven&apos;, The owner&apos;s intent is to continue to provide a safe space for
           everybody from all walks of life to relax.
         </p>
 
