@@ -22,11 +22,11 @@ export default function AboutFounder() {
           Satveer Singh
           <br />
           <br />
-          Since the beginning of my career, I've focused on channelling my
+          Since the beginning of my career, I&apos;ve focused on channelling my
           talent and creativity into meaningful and powerful results. I take
-          pride in the work I do, as well as the strong relationships I've built
+          pride in the work I do, as well as the strong relationships I&apos;ve built
           with clients and colleagues. I firmly believe in working hard, working
-          together and having fun along the way. If you're interested in
+          together and having fun along the way. If you&apos;re interested in
           learning more about me or my work, simply reach out.
         </p>
 

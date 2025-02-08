@@ -9,7 +9,7 @@ export default function Summary() {
         </h2>
         <p className="mt-4 font-Lora text-lg sm:text-xl space-y-2">
           Founded on the concept of seva, or selfless service, Designlōk
-          (dĭ-zīn' - lōk) (o as in 'oak') refers to a state of being in which
+          (dĭ-zīn&apos; - lōk) (o as in &apos;oak&apos;) refers to a state of being in which
           all service-oriented thoughts, feeling, and action exist. It is the
           state of being in which there is a fluidity between the body and the
           mind, where dedication and empathy intersect.
