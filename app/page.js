@@ -17,7 +17,7 @@ export default function Home() {
               alt=""
               height={350}
               width={350}
-              className=" mx-auto"
+              className="mx-auto w-fit h-fit"
             />
             <p className="mt-10 text-xl">Empower. Innovate. Transform.</p>
           </div>
