@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="bg-gray-100">
       <div className="mx-auto px-16 pb-8 sm:px-6 lg:px-8">
-        <div className="border-t border-gray-100 px-24 pt-8 sm:flex sm:items-center sm:justify-between">
+        <div className="border-t border-gray-100 w-full pt-8 sm:flex sm:items-center sm:justify-between">
           {/* <ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
             <li>
               <Link
@@ -33,7 +33,7 @@ function Footer() {
             </li>
           </ul> */}
 
-          <div className="text-left text-gray-500 text-xs">
+          <div className="text-left text-gray-500 text-xs flex w-full md:text-sm">
             ©2024 DesignLōk Consulting All Rights Reserved.
           </div>
 
