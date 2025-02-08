@@ -2,7 +2,7 @@
 
 import { signIn, signOut } from "@/auth";
 import { saltAndHashPassword } from "@/lib/authHelpers";
-import prisma from "@/lib/prisma";
+import { supabase } from "@/lib/supabase";
 import { redirect } from "next/navigation";
 
 const loginUser = async (formData) =>{
@@ -36,17 +36,11 @@ const registerUser = async (formData)=>{
     }
 
     try {
-        const newUser = await prisma.user.create({
-            data:{
-                name,
-                email,
-                password: hashedPassword,
-            }
-        })
+        const {error} = await supabase.from('users').insert({name: name, email: email, password: hashedPassword})
 
-        if(newUser){
+        if(error){
 
-            console.log("User Registered Successfully", newUser)
+            console.log("User Registered Successfully", error)
         }
         else{
             console.log("Error")
