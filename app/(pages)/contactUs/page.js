@@ -1,3 +1,4 @@
+import { sendMail } from "@/actions/contactMail";
 import Link from "next/link";
 import React from "react";
 
@@ -198,7 +199,7 @@ export default function contactUs() {
           </div>
 
           <div className="rounded-lg bg-gray-200 p-8 shadow-lg lg:col-span-3 lg:p-12">
-            <form action="#" className="space-y-4">
+            <form action={sendMail} className="space-y-4">
               <div>
                 <label className="sr-only" htmlFor="name">
                   Name

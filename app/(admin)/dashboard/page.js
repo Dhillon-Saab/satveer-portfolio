@@ -1,13 +1,13 @@
-import { logOutUser } from "@/actions/authActions";
 import React from "react";
+import RichTextEditor from "../_components/RichTextEditor";
 
 function page() {
   return (
     <div>
-      dashboard
-      <button onClick={logOutUser}>SignOut</button>
+      {/* <RichTextEditor /> */}
+      Dashboard
     </div>
   );
-}
+} 
 
 export default page;
