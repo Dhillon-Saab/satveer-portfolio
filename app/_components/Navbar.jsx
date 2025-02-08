@@ -28,7 +28,7 @@ function Navbar() {
             </Link>
           </div>
 
-          <div className="flex items-center gap-4 w-full md:w-auto">
+          <div className="flex items-center gap-4 w-full md:w-auto sm:w-auto">
             {/* <button
               onClick={toggleMenu}
               className="text-white inline-block md:hidden"
@@ -43,7 +43,7 @@ function Navbar() {
             </button> */}
 
             <div
-              className={`flex flex-row space-x-8 mt-0 gap-7 mx-auto md:mx-0`}
+              className={`flex flex-col space-x-8 mt-0 gap-7 mx-auto md:mx-0 sm:mx-auto`}
             >
               <nav className="flex gap-6" aria-label="Tabs">
                 {["/", "/works", "/services", "/aboutUs", "/contactUs"].map(

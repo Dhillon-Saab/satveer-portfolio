@@ -52,12 +52,11 @@ export default function OurValues() {
                 className="w-auto h-24 sm:h-32 transition-all duration-300 ease-in-out group-hover:opacity-0"
               />
               <p className="w-40 h-auto font-Josefin-Sans text-lg sm:text-xl text-center align-middle absolute opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
-                <span className="font-Lora text-2xl sm:text-3xl">
+                <span className="font-Lora text-xl sm:text-3xl">
                   {item.title}
                 </span>
                 <br />
-                <br />
-                <span className="text-sm sm:text-base">{item.description}</span>
+                <span className="text-xs sm:text-base">{item.description}</span>
               </p>
             </div>
           ))}
