@@ -45,7 +45,7 @@ function Navbar() {
             <div
               className={`flex flex-col space-x-8 mt-0 gap-7 mx-auto md:mx-0 sm:mx-auto`}
             >
-              <nav className="flex gap-6" aria-label="Tabs">
+              <nav className="flex block gap-6" aria-label="Tabs">
                 {["/", "/works", "/services", "/aboutUs", "/contactUs"].map(
                   (path) => (
                     <Link

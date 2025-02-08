@@ -6,7 +6,7 @@ function Contributions() {
     <section className="overflow-hidden rounded-lg mt-5 shadow-2xl md:grid md:grid-cols-2">
       <div className="p-4 text-center sm:p-6 md:col-span-2 lg:p-8">
         <p className="text-4xl font-semibold uppercase tracking-widest">
-          Companies that trusted Us.
+          Companies that trust Us.
         </p>
 
         <div className="flex gap-4 mt-10">
