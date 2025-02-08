@@ -9,7 +9,7 @@ function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className=" z-20 bg-navbar-bg sticky top-0 overflow-hidden drop-shadow-lg shadow-md">
+    <header className="z-20 bg-navbar-bg sticky top-0 overflow-hidden drop-shadow-lg shadow-md">
       <div className="mx-auto  max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <div className="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">
           <div className="w-full md:w-auto">
@@ -43,9 +43,9 @@ function Navbar() {
             </button> */}
 
             <div
-              className={`flex flex-col space-x-8 mt-0 gap-7 mx-auto md:mx-0 sm:mx-auto`}
+              className={`flex h-auto w-auto space-x-8 mt-0 gap-7 mx-auto md:mx-0 sm:mx-auto`}
             >
-              <nav className="flex block gap-6" aria-label="Tabs">
+              <nav className="md:flex md:gap-6 sm:gap-6 sm:flex" aria-label="Tabs">
                 {["/", "/works", "/services", "/aboutUs", "/contactUs"].map(
                   (path) => (
                     <Link
@@ -53,7 +53,7 @@ function Navbar() {
                       href={path}
                       className={`${
                         path === pathname
-                          ? "bg-white p-2 text-sm font-bold text-navbar-bg"
+                          ? "bg-white p-2 mx-2 md:mx-auto text-sm font-bold text-navbar-bg"
                           : "p-2 text-sm font-medium text-white hover:bg-gray-50 hover:text-gray-700"
                       } shrink-0 rounded-lg`}
                     >
