@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import MediaLayout from "./_components/MediaLayout";
 import { getAllTheImages } from "@/actions/getMedia";
 
-function page() {
+export default function Page() {
   const [imagesData, setImagesData] = useState();
 
   const fetchImages = async () => {
@@ -32,4 +32,3 @@ function page() {
   );
 }
 
-export default page;
