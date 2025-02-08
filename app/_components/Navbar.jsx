@@ -42,24 +42,31 @@ function Navbar() {
               </svg>
             </button> */}
 
-            <div className={`flex flex-row space-x-8 mt-0 gap-7 mx-auto md:mx-0`}>
+            <div
+              className={`flex flex-row space-x-8 mt-0 gap-7 mx-auto md:mx-0`}
+            >
               <nav className="flex gap-6" aria-label="Tabs">
-                {["/", "/works", "/services", "/contactUs"].map((path) => (
-                  <Link
-                    key={path}
-                    href={path}
-                    className={`${
-                      path === pathname
-                        ? "bg-white p-2 text-sm font-bold text-navbar-bg"
-                        : "p-2 text-sm font-medium text-white hover:bg-gray-50 hover:text-gray-700"
-                    } shrink-0 rounded-lg`}
-                  >
-                    {path === "/"
-                      ? "Home"
-                      : path.substring(1).charAt(0).toUpperCase() +
-                        path.substring(2)}
-                  </Link>
-                ))}
+                {["/", "/works", "/services", "/aboutUs", "/contactUs"].map(
+                  (path) => (
+                    <Link
+                      key={path}
+                      href={path}
+                      className={`${
+                        path === pathname
+                          ? "bg-white p-2 text-sm font-bold text-navbar-bg"
+                          : "p-2 text-sm font-medium text-white hover:bg-gray-50 hover:text-gray-700"
+                      } shrink-0 rounded-lg`}
+                    >
+                      {path === "/"
+                        ? "Home"
+                        : path === "/aboutUs"
+                        ? (path.substring(1).charAt(0).toUpperCase() +
+                          path.substring(2)).replace(/(.{5})/, '$1 ')
+                        : path.substring(1).charAt(0).toUpperCase() +
+                          path.substring(2)}
+                    </Link>
+                  )
+                )}
 
                 {/* <Link
                   href="/"
