@@ -18,7 +18,7 @@ function AboutProjectDetails({ aboutWork, goals, role, tools, duration }) {
         <h4 className="font-Lora text-left text-2xl sm:text-3xl md:text-4xl mt-8 sm:mt-12 md:mt-16">
           Goal
         </h4>
-        <p className="text-lg sm:text-xl md:text-2xl text-left mt-3 mr-0 sm:mr-4 md:mr-8 lg:mr-24 space-y-4 font-bold">
+        <p className="text-lg sm:text-lg md:text-lg text-left mt-3 mr-0 sm:mr-4 md:mr-8 lg:mr-24 space-y-4 font-bold">
           {goals}
         </p>
       </div>

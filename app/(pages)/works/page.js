@@ -17,7 +17,7 @@ function Page() {
 
   return (
     <>
-      {typeof workData === "object" ? (
+      {typeof workData === "object" && workData?.length >= 1 ? (
         <div className="md:px-10 text-center justify-center items-center">
           {workData.map((work, index) => (
             <ProjectCard
