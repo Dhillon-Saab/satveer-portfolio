@@ -1,11 +1,16 @@
 "use client";
 import { saveToSupabase } from "@/actions/supabaseImage";
 import RichTextEditor from "@/app/(admin)/_components/RichTextEditor";
-import { useState } from "react";
+import {useState } from "react";
+import PreviewCard from "./_components/PreviewCard";
+import BannerImageTaker from "./_components/BannerImageTaker";
+import AboutTheProject from "./_components/AboutTheProject";
 
 const NewPostPage = () => {
   const [content, setContent] = useState("");
   const [title, setTitle] = useState("");
+  const [shortDesc, setShortDesc] = useState("");
+
   const [aboutTheProject, setAboutTheProject] = useState("");
   const [goalOfTheProject, setGoalOfTheProject] = useState("");
   const [role, setRole] = useState("");
@@ -23,41 +28,20 @@ const NewPostPage = () => {
       <h2 className="m-4 text-4xl text-black font-bold font-Josefin-Sans">
         Create a New Post for /works
       </h2>
-      <input
-        required
-        type="text"
-        placeholder="Title for the Post"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-        className="flex w-3/4 align-middle justify-center p-2 items-center mx-auto text-3xl font-bold  border-b-2 focus:outline-none focus:border-blue-500"
-      />
-      <div className="grid grid-cols-2">
-        <div className="col-span-1 my-8 ">
-          <label htmlFor="aboutTheProject" className="text-3xl">
-            About The Project
-          </label>
-          <textarea
-            required
-            name="aboutTheProject"
-            id="aboutTheProject"
-            value={aboutTheProject}
-            onChange={(e) => setAboutTheProject(e.target.value)}
-            className="focus:outline-none focus:border-blue-500 flex w-5/6 border-b-2 h-48 p-2 text-xl font-Lora "
-          ></textarea>
-        </div>
-        <div className="col-span-1 my-8 ">
-          <label htmlFor="GoalOfTheProject" className="text-3xl">
-            Goal For The Project
-          </label>
-          <textarea
-            required
-            name="GoalOfTheProject"
-            id="GoalOfTheProject"
-            value={goalOfTheProject}
-            onChange={(e) => setGoalOfTheProject(e.target.value)}
-            className="focus:outline-none focus:border-blue-500 flex w-5/6 border-b-2  h-48 p-2 text-xl font-Lora "
-          ></textarea>
-        </div>
+      <div className="gap-3 flex flex-col">
+        <PreviewCard
+          title={title}
+          setTitle={setTitle}
+          shortDesc={shortDesc}
+          setShortDesc={setShortDesc}
+        />
+        <BannerImageTaker />
+        <AboutTheProject
+          aboutTheProject={aboutTheProject}
+          setAboutTheProject={setAboutTheProject}
+          goalOfTheProject={goalOfTheProject}
+          setGoalOfTheProject={setGoalOfTheProject}
+        />
       </div>
       <div className="flex gap-10">
         <div>

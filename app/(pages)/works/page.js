@@ -16,18 +16,20 @@ function Page() {
   }, []);
 
   return (
-    <div className="md:px-10 text-center justify-center items-center">
+    <>
       {typeof workData === "object" ? (
-        workData.map((work, index) => (
-          <ProjectCard
-            key={work.id}
-            more={`${work.id}-${work?.content?.url}`}
-            desc={work.content?.shortDesc}
-            heading={work?.title}
-            img={work.content?.projectImage}
-            align={index % 2 == 0 ? "left" : "right"}
-          />
-        ))
+        <div className="md:px-10 text-center justify-center items-center">
+          {workData.map((work, index) => (
+            <ProjectCard
+              key={work.id}
+              more={`${work.id}-${work?.content?.url}`}
+              desc={work.content?.shortDesc}
+              heading={work?.title}
+              img={work.content?.projectImage}
+              align={index % 2 == 0 ? "left" : "right"}
+            />
+          ))}
+        </div>
       ) : (
         <section className="bg-gray-800 relative place-items-center grid h-screen w-screen gap-4">
           <div className="bg-gray-500 w-48 h-48  absolute animate-ping rounded-full delay-5s shadow-xl"></div>
@@ -55,7 +57,7 @@ function Page() {
       {/* <ProjectCard more={"aggudo"} desc={"Taking a user-centred approach to staff and customer-well being"}  heading={"Aggüdo Coffee"} img={"/aggudo.webp"} align={"left"}/>
       <ProjectCard more={"blueprintforjustice"} desc={"Empowering those that have experienced police violence to heal and seek justice."}  heading={"Blueprint for Justice"} img={"/pic2.webp"} align={"right"}/> */}
       {/* <p className="text-4xl">This feature is under-development. Thanks for patience</p> */}
-    </div>
+    </>
   );
 }
 
