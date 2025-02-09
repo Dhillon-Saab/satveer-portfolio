@@ -1,24 +1,28 @@
-'use client';
-import { useEditor, EditorContent } from '@tiptap/react';
-import StarterKit from '@tiptap/starter-kit';
-import Image from '@tiptap/extension-image';
-import Underline from '@tiptap/extension-underline';
-import TextStyle from '@tiptap/extension-text-style';
-import { FontFamily } from '@tiptap/extension-font-family';
-import { FontSize } from './FontSize'; // Custom extension for font size
-import TextAlign from '@tiptap/extension-text-align';
-import BulletList from '@tiptap/extension-bullet-list';
-import OrderedList from '@tiptap/extension-ordered-list';
-import { addImageToSupabase } from '@/actions/supabaseImage';
-
+"use client";
+import { useEditor, EditorContent } from "@tiptap/react";
+import StarterKit from "@tiptap/starter-kit";
+import Image from "@tiptap/extension-image";
+import Underline from "@tiptap/extension-underline";
+import TextStyle from "@tiptap/extension-text-style";
+import { Color } from "@tiptap/extension-color";
+import { FontFamily } from "@tiptap/extension-font-family";
+import { FontSize } from "./FontSize"; // Custom extension for font size
+import TextAlign from "@tiptap/extension-text-align";
+import BulletList from "@tiptap/extension-bullet-list";
+import OrderedList from "@tiptap/extension-ordered-list";
+import { addImageToSupabase } from "@/actions/supabaseImage";
 
 // Icons
 
-import { CiTextAlignCenter, CiTextAlignJustify, CiTextAlignRight } from "react-icons/ci";
+import {
+  CiTextAlignCenter,
+  CiTextAlignJustify,
+  CiTextAlignRight,
+} from "react-icons/ci";
 import { CiTextAlignLeft } from "react-icons/ci";
 import { GoListUnordered } from "react-icons/go";
 import { GoListOrdered } from "react-icons/go";
-import { FaRegImage } from 'react-icons/fa';
+import { FaRegImage } from "react-icons/fa";
 
 const RichTextEditor = ({ content, onChange }) => {
   const editor = useEditor({
@@ -30,35 +34,40 @@ const RichTextEditor = ({ content, onChange }) => {
       }),
       Underline,
       TextStyle,
+      Color.configure({
+        types: ["textStyle"],
+      }),
       FontFamily.configure({
-        types: ['textStyle']
+        types: ["textStyle"],
       }),
       FontSize,
       Image.configure({
         inline: true,
         allowBase64: false,
         HTMLAttributes: {
-          class: 'rounded-lg',
+          class: "rounded-lg",
         },
       }),
       TextAlign.configure({
-        types: ['heading', 'paragraph', 'image'],
-        alignments: ['left', 'center', 'right', 'justify'],
-        defaultAlignment: 'left',
+        types: ["heading", "paragraph", "image"],
+        alignments: ["left", "center", "right", "justify"],
+        defaultAlignment: "left",
       }),
       BulletList.configure({
         HTMLAttributes: {
-          class: 'list-disc pl-6',
+          class: "list-disc pl-6",
         },
       }),
       OrderedList.configure({
         HTMLAttributes: {
-          class: 'list-decimal pl-6',
+          class: "list-decimal pl-6",
         },
       }),
     ],
     immediatelyRender: false,
-    content: content || `
+    content:
+      content ||
+      `
     <p></p>
     <p></p>
     <p></p>
@@ -82,8 +91,7 @@ const RichTextEditor = ({ content, onChange }) => {
 
   // Add image to Supabase and insert into editor
   const addImage = async (file) => {
- 
-    const publicURL = await addImageToSupabase(file)
+    const publicURL = await addImageToSupabase(file);
 
     // Insert image into editor
     editor.chain().focus().setImage({ src: publicURL.publicUrl }).run();
@@ -97,9 +105,8 @@ const RichTextEditor = ({ content, onChange }) => {
     <div className="border rounded-lg p-4 bg-white">
       {/* Toolbar */}
       <div className="flex flex-wrap gap-2 mb-4">
-        
         {/* Font Selection */}
-      <select
+        <select
           onChange={(e) => {
             editor.chain().focus().setFontFamily(e.target.value).run();
           }}
@@ -111,15 +118,15 @@ const RichTextEditor = ({ content, onChange }) => {
           <option value="Georgia">Georgia</option>
           <option value="Verdana">Verdana</option>
           <option value="Comic Sans MS">Comic Sans MS</option>
-          <option value="Josefin-Sans">Josefin Sans</option>
+          <option value="Josefin Sans">Josefin Sans</option>
           <option value="Lora">Lora</option>
         </select>
-        
+
         {/* Bold, Italic, Underline */}
         <button
           onClick={() => editor.chain().focus().toggleBold().run()}
           className={`px-3 py-2 rounded ${
-            editor.isActive('bold') ? 'bg-blue-100' : 'bg-gray-100'
+            editor.isActive("bold") ? "bg-blue-100" : "bg-gray-100"
           } hover:bg-gray-200`}
         >
           <strong>B</strong>
@@ -127,7 +134,7 @@ const RichTextEditor = ({ content, onChange }) => {
         <button
           onClick={() => editor.chain().focus().toggleItalic().run()}
           className={`px-3 py-2 rounded ${
-            editor.isActive('italic') ? 'bg-blue-100' : 'bg-gray-100'
+            editor.isActive("italic") ? "bg-blue-100" : "bg-gray-100"
           } hover:bg-gray-200`}
         >
           <em>I</em>
@@ -135,11 +142,20 @@ const RichTextEditor = ({ content, onChange }) => {
         <button
           onClick={() => editor.chain().focus().toggleUnderline().run()}
           className={`px-3 py-2 rounded ${
-            editor.isActive('underline') ? 'bg-blue-100' : 'bg-gray-100'
+            editor.isActive("underline") ? "bg-blue-100" : "bg-gray-100"
           } hover:bg-gray-200`}
         >
           <u>U</u>
         </button>
+
+        {/* Text Color */}
+        <input
+          type="color"
+          onChange={(e) => {
+            editor.chain().focus().setColor(e.target.value).run();
+          }}
+          className="w-8 h-8 p-1 bg-gray-100 rounded hover:bg-gray-200 cursor-pointer flex align-middle justify-center item mt-1"
+        />
 
         {/* Headings */}
         <select
@@ -180,54 +196,74 @@ const RichTextEditor = ({ content, onChange }) => {
 
         {/* Text Alignment */}
         <button
-          onClick={() => editor.chain().focus().setTextAlign('left').run()}
+          onClick={() => editor.chain().focus().setTextAlign("left").run()}
           className={`px-3 py-2 rounded ${
-            editor.isActive({ textAlign: 'left' }) ? 'bg-blue-100' : 'bg-gray-100'
+            editor.isActive({ textAlign: "left" })
+              ? "bg-blue-100"
+              : "bg-gray-100"
           } hover:bg-gray-200`}
         >
-          <span className="text-left"><CiTextAlignLeft size={20} /></span>
+          <span className="text-left">
+            <CiTextAlignLeft size={20} />
+          </span>
         </button>
         <button
-          onClick={() => editor.chain().focus().setTextAlign('center').run()}
+          onClick={() => editor.chain().focus().setTextAlign("center").run()}
           className={`px-3 py-2 rounded ${
-            editor.isActive({ textAlign: 'center' }) ? 'bg-blue-100' : 'bg-gray-100'
+            editor.isActive({ textAlign: "center" })
+              ? "bg-blue-100"
+              : "bg-gray-100"
           } hover:bg-gray-200`}
         >
-          <span className="text-center"><CiTextAlignCenter size={20}/></span>
+          <span className="text-center">
+            <CiTextAlignCenter size={20} />
+          </span>
         </button>
         <button
-          onClick={() => editor.chain().focus().setTextAlign('right').run()}
+          onClick={() => editor.chain().focus().setTextAlign("right").run()}
           className={`px-3 py-2 rounded ${
-            editor.isActive({ textAlign: 'right' }) ? 'bg-blue-100' : 'bg-gray-100'
+            editor.isActive({ textAlign: "right" })
+              ? "bg-blue-100"
+              : "bg-gray-100"
           } hover:bg-gray-200`}
         >
-          <span className="text-right"><CiTextAlignRight size={20} /></span>
+          <span className="text-right">
+            <CiTextAlignRight size={20} />
+          </span>
         </button>
         <button
-          onClick={() => editor.chain().focus().setTextAlign('justify').run()}
+          onClick={() => editor.chain().focus().setTextAlign("justify").run()}
           className={`px-3 py-2 rounded ${
-            editor.isActive({ textAlign: 'justify' }) ? 'bg-blue-100' : 'bg-gray-100'
+            editor.isActive({ textAlign: "justify" })
+              ? "bg-blue-100"
+              : "bg-gray-100"
           } hover:bg-gray-200`}
         >
-          <span className="text-justify"><CiTextAlignJustify size={20} /></span>
+          <span className="text-justify">
+            <CiTextAlignJustify size={20} />
+          </span>
         </button>
 
         {/* Lists */}
         <button
           onClick={() => editor.chain().focus().toggleBulletList().run()}
           className={`px-3 py-2 rounded ${
-            editor.isActive('bulletList') ? 'bg-blue-100' : 'bg-gray-100'
+            editor.isActive("bulletList") ? "bg-blue-100" : "bg-gray-100"
           } hover:bg-gray-200`}
         >
-          <span><GoListUnordered size={20}/></span>
+          <span>
+            <GoListUnordered size={20} />
+          </span>
         </button>
         <button
           onClick={() => editor.chain().focus().toggleOrderedList().run()}
           className={`px-3 py-2 rounded ${
-            editor.isActive('orderedList') ? 'bg-blue-100' : 'bg-gray-100'
+            editor.isActive("orderedList") ? "bg-blue-100" : "bg-gray-100"
           } hover:bg-gray-200`}
         >
-          <span><GoListOrdered size={20} /></span>
+          <span>
+            <GoListOrdered size={20} />
+          </span>
         </button>
 
         {/* Image Upload */}
@@ -242,14 +278,18 @@ const RichTextEditor = ({ content, onChange }) => {
           htmlFor="image-upload"
           className="px-4 py-2 bg-gray-100 rounded cursor-pointer hover:bg-gray-200"
         >
-          <FaRegImage size={20}/>
+          <FaRegImage size={20} />
         </label>
       </div>
 
       {/* Editor Content */}
       <EditorContent
         editor={editor}
-        // className="prose max-w-none min-h-[400px] h-full p-4 focus:outline-none outline-none focus-visible:outline-none border-none "
+        className="prose max-w-none min-h-[600px] p-4 focus:outline-none
+          bg-[linear-gradient(0deg,_transparent_24px,_#e5e7eb_25px)]  // Horizontal lines
+          bg-[length:100%_25px]  // Line spacing
+          pl-[30px]  // Left padding for line numbers
+          relative"
       />
     </div>
   );

@@ -8,6 +8,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-Josefin: 'Josefin Sans', 'sans-serif';
+  --font-Lora: 'Lora', 'sans-serif';
 }
 
 @media (prefers-color-scheme: dark) {
