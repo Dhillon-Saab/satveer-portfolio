@@ -60,8 +60,8 @@ function Page({ params }) {
             duration={workData?.content?.About?.duration?.toString()}
             tools={workData?.content?.About?.tools}
           />
-          <QuestionsChallenges />
-          <Solution />
+          {/* <QuestionsChallenges />
+          <Solution /> */}
         </>
       ) : (
         <section className="bg-gray-800 relative place-items-center grid h-screen w-screen gap-4">
