@@ -23,7 +23,7 @@ export default function Services() {
           </p>
           <Link
             className="mt-5 group relative inline-block text-sm font-medium text-white focus:outline-none focus:ring"
-            href="http://localhost:3000/works/34-blueprintforjustice"
+            href="/works/34-blueprintforjustice"
           >
             <span className="absolute inset-0 border border-navbar-bg group-active:border-navbar-bg"></span>
             <span className="block border border-navbar-bg bg-navbar-bg px-8 py-3 transition-transform active:border-navbar-bg active:bg-slate-500 group-hover:-translate-x-1 group-hover:-translate-y-1">
@@ -43,7 +43,7 @@ export default function Services() {
           <p className="mt-2">Branding builds lasting value - aligning you with stakeholders</p>
           <Link
             className="mt-5 group relative inline-block text-sm font-medium text-white focus:outline-none focus:ring"
-            href="http://localhost:3000/works/36-incluCityCalgary"
+            href="/works/36-incluCityCalgary"
           >
             <span className="absolute inset-0 border border-navbar-bg group-active:border-navbar-bg"></span>
             <span className="block border border-navbar-bg bg-navbar-bg px-8 py-3 transition-transform active:border-navbar-bg active:bg-slate-500 group-hover:-translate-x-1 group-hover:-translate-y-1">
@@ -66,7 +66,7 @@ export default function Services() {
           </p>
           <Link
             className="mt-5 group relative inline-block text-sm font-medium text-white focus:outline-none focus:ring"
-            href="http://localhost:3000/works/33-aggudo"
+            href="/works/33-aggudo"
           >
             <span className="absolute inset-0 border border-navbar-bg group-active:border-navbar-bg"></span>
             <span className="block border border-navbar-bg bg-navbar-bg px-8 py-3 transition-transform active:border-navbar-bg active:bg-slate-500 group-hover:-translate-x-1 group-hover:-translate-y-1">
