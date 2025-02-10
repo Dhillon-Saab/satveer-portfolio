@@ -18,10 +18,10 @@ function Navbar() {
               className="text-4xl font-bold text-gray-900 md:w-auto sm:text-3xl"
             >
               <Image
-                src={"/logo.webp"}
+                src={"/logo_new.png"}
                 alt="DesignLok Logo"
-                height={110}
-                width={110}
+                height={120}
+                width={120}
                 style={{ width: "auto", height: "auto" }}
                 className="justify-center items-center md:w-full mx-auto md:mx-0 sm:justify-start sm:items-start"
               />
