@@ -33,8 +33,8 @@ function Footer() {
             </li>
           </ul> */}
 
-          <div className="text-left text-gray-500 text-xs flex w-full md:text-sm">
-            ©2024 DesignLōk Consulting All Rights Reserved.
+          <div className="text-left text-gray-500 text-xs font-Lora flex w-full md:text-sm">
+            ©2025 Project Aanata Consulting All Rights Reserved.
           </div>
 
           <ul className="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">

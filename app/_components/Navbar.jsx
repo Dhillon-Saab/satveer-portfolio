@@ -54,7 +54,8 @@ function Navbar() {
                       className={`${
                         path === pathname
                           ? "bg-white p-2 mx-2 md:mx-auto text-sm font-bold text-navbar-bg"
-                          : "p-2 text-sm font-medium text-white hover:bg-gray-50 hover:text-gray-700"
+                          : "p-2 text-sm font-jos text-white hover:bg-gray-50 hover:text-gray-700"
+                          
                       } shrink-0 rounded-lg`}
                     >
                       {path === "/"

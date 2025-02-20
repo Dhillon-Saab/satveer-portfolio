@@ -10,7 +10,7 @@ function CTA() {
             Working together to create a better tomorrow.
           </h2>
 
-          <p className="hidden text-gray-500 text-lg md:mt-4 md:block">
+          <p className="hidden text-gray-500 text-lg md:mt-4 md:block font-Lora">
             Whether its navigating the complexities of the legal system or
             improving the coffee experience - we begin with listening and
             putting the user at the centre of our design to collaborate.
@@ -19,7 +19,7 @@ function CTA() {
           <div className="mt-4 md:mt-8">
             <a
               href="/services"
-              className="inline-block rounded bg-navbar-bg px-12 py-3 text-lg font-medium text-white transition hover:bg-slate-600 focus:outline-none focus:ring focus:ring-yellow-400"
+              className="inline-block rounded font-Josefin-Sans bg-navbar-bg px-12 py-3 text-lg font-medium text-white transition hover:bg-slate-600 focus:outline-none focus:ring focus:ring-yellow-400"
             >
               View our Services
             </a>
