@@ -5,7 +5,7 @@ import AboutProjectDetails from "../_components/AboutProjectDetails";
 import QuestionsChallenges from "../_components/Questions";
 import { getWorkFromId } from "@/actions/getWorks";
 import { ImageOverlay } from "../_components/ImageOverlay";
-import Loading from "@/app/Loading";
+import Loading from "@/app/loading";
 import IncluCityContent from "../_components/IncluCityContent";
 import CalTransContent from "../_components/CalTransContent";
 import BluePrintForJustice from "../_components/BluePrintForJustice";
