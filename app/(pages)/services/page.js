@@ -21,15 +21,14 @@ export default function Services() {
             There is never failure, only optimization. We evaluate your goals
             and work around any constraints you might have.
           </p>
-          <Link
-            className="mt-5 group relative inline-block text-sm font-Josefin-Sans font-medium text-white focus:outline-none focus:ring"
-            href="/works/34-blueprintforjustice"
-          >
-            <span className="absolute inset-0 border border-navbar-bg group-active:border-navbar-bg"></span>
-            <span className="block border border-navbar-bg bg-navbar-bg px-8 py-3 transition-transform active:border-navbar-bg active:bg-slate-500 group-hover:-translate-x-1 group-hover:-translate-y-1">
+          <div className="mt-4 md:mt-8">
+            <Link
+              href="/works/34-blueprintforjustice"
+              className="inline-block rounded font-Josefin-Sans bg-navbar-bg px-8 py-2 text-base font-medium text-white transition hover:bg-slate-600 focus:outline-none focus:ring focus:ring-yellow-400"
+            >
               Case Study
-            </span>
-          </Link>
+            </Link>
+          </div>
         </div>
         <div className="m-4 bg-gray-100 drop-shadow-md shadow-lg p-6 md:p-8 lg:p-32 md:w-full rounded-3xl">
           <Image 
@@ -41,15 +40,14 @@ export default function Services() {
           />
           <h2 className="font-Josefin-Sans text-xl mt-4">Innovative</h2>
           <p className="mt-2 font-Lora">Branding builds lasting value - aligning you with stakeholders</p>
-          <Link
-            className="mt-5 group relative inline-block text-sm  font-Josefin-Sans font-medium text-white focus:outline-none focus:ring"
-            href="/works/36-incluCityCalgary"
-          >
-            <span className="absolute inset-0 border border-navbar-bg group-active:border-navbar-bg"></span>
-            <span className="block border border-navbar-bg bg-navbar-bg px-8 py-3 transition-transform active:border-navbar-bg active:bg-slate-500 group-hover:-translate-x-1 group-hover:-translate-y-1">
+          <div className="mt-4 md:mt-8">
+            <Link
+              href="/works/36-incluCityCalgary"
+              className="inline-block rounded font-Josefin-Sans bg-navbar-bg px-8 py-2 text-base font-medium text-white transition hover:bg-slate-600 focus:outline-none focus:ring focus:ring-yellow-400"
+            >
               Case Study
-            </span>
-          </Link>
+            </Link>
+          </div>
         </div>
         <div className="m-4 bg-gray-100 drop-shadow-md shadow-lg p-6 md:p-8 lg:p-32 md:w-full rounded-3xl">
           <Image 
@@ -64,15 +62,14 @@ export default function Services() {
             Average attention span: 8.2 seconds. Prioritize yourself, help
             others, and grow together. We can assist.
           </p>
-          <Link
-            className="mt-5 group relative inline-block text-sm font-Josefin-Sans font-medium text-white focus:outline-none focus:ring"
-            href="/works/33-aggudo"
-          >
-            <span className="absolute inset-0 border border-navbar-bg group-active:border-navbar-bg"></span>
-            <span className="block border border-navbar-bg bg-navbar-bg px-8 py-3 transition-transform active:border-navbar-bg active:bg-slate-500 group-hover:-translate-x-1 group-hover:-translate-y-1">
+          <div className="mt-4 md:mt-8">
+            <Link
+              href="/works/33-aggudo"
+              className="inline-block rounded font-Josefin-Sans bg-navbar-bg px-8 py-2 text-base font-medium text-white transition hover:bg-slate-600 focus:outline-none focus:ring focus:ring-yellow-400"
+            >
               Case Study
-            </span>
-          </Link>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
