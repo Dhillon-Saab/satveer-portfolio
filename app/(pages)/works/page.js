@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import ProjectCard from "./_components/ProjectCard";
 import { getAllTheWorks } from "@/actions/getWorks";
-import Loading from "@/app/Loading";
+import Loading from "@/app/loading";
 
 function Page() {
   const [workData, setWorkData] = useState([]);
