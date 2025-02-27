@@ -26,8 +26,8 @@ const IncluCityContent = () => (
           How do we roll out an identity for a group while representing the
           tenets of accessible design? With no name, how do a group of directors
           come to a consensus on a name that represents the people of Calgary,
-          without including words that have connotations, such as 'civic' or
-          'user'.
+          without including words that have connotations, such as &apos;civic&apos; or
+          &apos;user&apos;.
         </p>
       </div>
     </section>
@@ -46,7 +46,7 @@ const IncluCityContent = () => (
         <p className="mt-4 list-none text-lg md:text-xl space-y-2 font-Lora font-extralight">
           We started by brainstorming ideas for a potential name while
           consisting polling our team for a name that would work. For some time,
-          the working name was 'Evolve', and so I created some sketches based on
+          the working name was &apos;Evolve&apos;, and so I created some sketches based on
           what that would look like.
         </p>
         <p className="mt-4 list-none text-lg md:text-xl space-y-2 font-Lora font-extralight">
@@ -91,12 +91,12 @@ const IncluCityContent = () => (
           <p className="mt-4 list-none text-lg md:text-xl space-y-2 font-Lora font-extralight">
             IncluCity Calgary represents an inclusive focused approach for
             usability testing in the city of Calgary, with a play on the word
-            'inclusivity'. This appears as our wordmark. Elements that would
-            carry over were the idea of 'dialogue' with a circular, unending
+            &apos;inclusivity&apos;. This appears as our wordmark. Elements that would
+            carry over were the idea of &apos;dialogue&apos; with a circular, unending
             motif.
           </p>
           <p className="mt-4 list-none text-lg md:text-xl space-y-2 font-Lora font-extralight">
-            The icon mark of the logo is the 'C' for 'City' which is in the form
+            The icon mark of the logo is the &apos;C&apos; for &apos;City&apos; which is in the form
             of a speech bubble. The icon pointing to Calgary emphasizes the
             importance of hearing from Calgarians to improve the experiences
             people have with technology.

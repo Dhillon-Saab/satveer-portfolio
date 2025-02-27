@@ -56,7 +56,7 @@ const CalTransContent = () => (
         <div className="mb-10">
           <p className="mt-4 font-Lora text-lg md:text-xl space-y-2 font-extralight">
             After interviewing the project lead and their presentation of the
-            employees' thoughts on the website in its current state, this user
+            employees&apos; thoughts on the website in its current state, this user
             persona was generated.
           </p>
           <div className="my-6 h-auto w-full md:w-3/4 mx-auto">
@@ -112,7 +112,7 @@ const CalTransContent = () => (
               serve any intended purpose
             </li>
             <li>
-              The use of colloquialisms, such as 'cradle-to-grave' should be
+              The use of colloquialisms, such as &apos;cradle-to-grave&apos; should be
               eliminated
             </li>
           </ul>

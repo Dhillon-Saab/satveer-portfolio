@@ -259,7 +259,7 @@ function BluePrintForJustice() {
             <p className="mt-4  text-lg md:text-xl space-y-2 font-Lora font-extralight">
               This now allows users to receive the assistance they need, and for
               the client to prioritize matters of greater significance. To learn
-              more about the open-source code, please visit the lead developer's
+              more about the open-source code, please visit the lead developer&apos;s
               GitHub.
             </p>
             <div className="mt-4 md:mt-8 items-center mx-auto flex justify-center">
@@ -359,7 +359,7 @@ function BluePrintForJustice() {
             Principles of
             <span className="font-bold"> personalization, empathy </span> and
             <span className="font-bold">
-              trauma-informed design will improve a user's experience.
+              trauma-informed design will improve a user&apos;s experience.
             </span>
             If there were ever a time to advocate for the user, it would be
             during a project of this magnitude. Insisting on having a database,
