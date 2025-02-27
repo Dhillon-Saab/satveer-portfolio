@@ -4,24 +4,14 @@ import CTA2 from "./_components/CTA2";
 import Contributions from "./_components/Contributions";
 import Navbar from "./_components/Navbar";
 import Footer from "./_components/Footer";
+import Banner from "./_components/Banner";
 
 export default function Home() {
   return (
     <div>
       <Navbar />
       <section className="bg-gray-50">
-        <div className="p-10 object-center bg-cover mx-auto text-white text-center bg-navbar-bg md:bg-[url('/banner_bg.png')]">
-          <div>
-            <Image
-              src={"/headPage.png"}
-              alt=""
-              height={350}
-              width={350}
-              className="mx-auto w-fit h-fit"
-            />
-            <p className="mt-4 bold text-xl font-Lora">Creating Digital Legacies, One Pixel At A Time</p>
-          </div>
-        </div>
+        <Banner />
         {/* <div className="flex">
           <Image src={"/pic1.webp"} height={1000} width={1000} alt="" className="w-full" />
           <div className="flex flex-col justify-start items-center p-28 pl-2">

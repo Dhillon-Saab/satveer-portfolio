@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         "navbar-bg" : "#123033",
         "darker" : "#102424",
+        "neutral-bg" : "#fffef8",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },

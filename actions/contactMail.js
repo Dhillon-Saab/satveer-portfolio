@@ -6,14 +6,18 @@ export const sendMail = async (formData) =>{
 
     const name = formData.get('name')
     const email = formData.get('email')
+    const phone = formData.get('phone')
     const message= formData.get('message')
 
     const {data, error} = await resend.emails.send({
         from: `${name} <admin@dhillonsaab.xyz>`,
         to: ['satveerxsingh@gmail.com'],
+        // to: ['ad70138@gmail.com'],
         subject: `Message from ${email} `,
         html: `<strong>${email}</strong>
-        <p>${message}</p>`,
+        <p>${message}</p>
+        <p>Phone: ${phone}</p>
+        `,
     });
     
     if(error){

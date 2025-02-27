@@ -5,6 +5,7 @@ import {useState } from "react";
 import PreviewCard from "./_components/PreviewCard";
 import BannerImageTaker from "./_components/BannerImageTaker";
 import AboutTheProject from "./_components/AboutTheProject";
+import { insertDataToDB } from "@/actions/savePostToDB";
 
 const NewPostPage = () => {
   const [content, setContent] = useState("");
@@ -20,7 +21,12 @@ const NewPostPage = () => {
     e.preventDefault();
 
     // Save to Supabase
-    const saveToSup = await saveToSupabase(title, content);
+    // const saveToSup = await saveToSupabase(title, content);
+    const saveToSup = await insertDataToDB({
+      title, shortDesc, bannerImage: localStorage.getItem("bannerImage"), projectImage: localStorage.getItem("previewImage")
+    });
+
+    console.log(saveToSup)
   };
 
   return (

@@ -3,37 +3,40 @@
 import Image from "next/image";
 import React, { useState } from "react";
 
-export const ImageOverlay = ({ imageUrl, altText }) => {
+export const ImageOverlay = ({ imageUrl, altText, size }) => {
   // State to handle whether the overlay is open or not
   const [isOpen, setIsOpen] = useState(false);
 
+
   // Function to open the overlay
-  const openOverlay = () => setIsOpen(true);
+  const openOverlay = () => {
+    setIsOpen(true);
+  };
 
   // Function to close the overlay
-  const closeOverlay = () => setIsOpen(false);
+  const closeOverlay = () => {
+    setIsOpen(false);
+  };
 
   return (
     <div className="">
       {/* Thumbnail image to click */}
-      <div className="relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
-        <Image
+      <div className="relative max-w-max overflow-hidden bg-cover bg-no-repeat">
+        <img
           src={imageUrl}
           alt={altText}
-          height={400}
-          width={400}
           onClick={openOverlay}
           className="cursor-pointer object-cover z-999 transition-all duration-300"
         />
         <a onClick={openOverlay}>
-          <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.2)] bg-fixed opacity-0 cursor-pointer transition duration-300 ease-in-out hover:opacity-100"></div>
+          <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.4)] bg-fixed opacity-0 cursor-pointer transition duration-300 ease-in-out hover:opacity-100"></div>
         </a>
       </div>
 
       {/* Modal (overlay) */}
       {isOpen && (
         <div
-          className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-85 flex justify-center items-center z-50"
+          className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-90 flex justify-center items-center z-50"
           // onClick={closeOverlay}
         >
           <div
@@ -42,7 +45,7 @@ export const ImageOverlay = ({ imageUrl, altText }) => {
           >
             <button
               onClick={closeOverlay}
-              className="fixed top-0 right-0 text-white m-5 overflow-clip rounded-full"
+              className="fixed top-0 right-0 font-extralight text-2xl text-white mx-8 my-6 overflow-clip rounded-full"
             >
               X
             </button>

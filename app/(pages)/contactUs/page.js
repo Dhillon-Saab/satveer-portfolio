@@ -11,7 +11,7 @@ export default function contactUs() {
             <h2 className="text-4xl font-bold font-Josefin-Sans text-white md:text-4xl">
               Together, let&#39;s build a more compassionate future.
             </h2>
-            <p className="max-w-xl text-white text-lg">
+            <p className="max-w-xl text-white text-lg font-Lora">
               Your staff and customers deserve the best that you can give them.
               Let&#39;s build it together.
             </p>
@@ -205,9 +205,10 @@ export default function contactUs() {
                   Name
                 </label>
                 <input
-                  className="w-full rounded-lg bg-gray-200 border border-black p-3 text-sm"
+                  className="w-full rounded-lg font-Lora bg-gray-200 border border-black p-3 text-sm"
                   placeholder="Name"
                   type="text"
+                  name="name"
                   id="name"
                   required
                 />
@@ -219,9 +220,10 @@ export default function contactUs() {
                     Email
                   </label>
                   <input
-                    className="w-full rounded-lg bg-gray-200 border border-black p-3 text-sm"
+                    className="w-full rounded-lg font-Lora bg-gray-200 border border-black p-3 text-sm"
                     placeholder="Email address"
                     type="email"
+                    name="email"
                     id="email"
                     required
                   />
@@ -232,8 +234,10 @@ export default function contactUs() {
                     Phone
                   </label>
                   <input
-                    className="w-full rounded-lg border bg-gray-200 border-black p-3 text-sm"
+                    pattern="/(\+\d{1,3}\s?)?((\(\d{3}\)\s?)|(\d{3})(\s|-?))(\d{3}(\s|-?))(\d{4})(\s?(([E|e]xt[:|.|]?)|x|X)(\s?\d+))?/g"
+                    className="w-full rounded-lg font-Lora border bg-gray-200 border-black p-3 text-sm"
                     placeholder="Phone Number"
+                    name="phone"
                     type="tel"
                     id="phone"
                     required
@@ -246,10 +250,11 @@ export default function contactUs() {
                 </label>
 
                 <textarea
-                  className="w-full rounded-lg border bg-gray-200 border-black p-3 text-sm"
+                  className="w-full rounded-lg font-Lora border bg-gray-200 border-black p-3 text-sm"
                   placeholder="Message"
                   rows="8"
                   id="message"
+                  name="message"
                   required
                 ></textarea>
               </div>
@@ -257,7 +262,7 @@ export default function contactUs() {
               <div className="mt-4">
                 <button
                   type="submit"
-                  className="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
+                  className="inline-block rounded font-Josefin-Sans bg-navbar-bg px-12 py-3 text-lg font-medium text-white transition hover:bg-slate-600 focus:outline-none focus:ring focus:ring-yellow-400"
                 >
                   Send Enquiry
                 </button>

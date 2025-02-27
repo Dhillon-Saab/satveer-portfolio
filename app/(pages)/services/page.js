@@ -17,12 +17,12 @@ export default function Services() {
             className="w-auto mx-auto h-40 md:h-56" 
           />
           <h2 className="font-Josefin-Sans text-xl mt-4">Empowering</h2>
-          <p className="mt-2">
+          <p className="mt-2 font-Lora">
             There is never failure, only optimization. We evaluate your goals
             and work around any constraints you might have.
           </p>
           <Link
-            className="mt-5 group relative inline-block text-sm font-medium text-white focus:outline-none focus:ring"
+            className="mt-5 group relative inline-block text-sm font-Josefin-Sans font-medium text-white focus:outline-none focus:ring"
             href="/works/34-blueprintforjustice"
           >
             <span className="absolute inset-0 border border-navbar-bg group-active:border-navbar-bg"></span>
@@ -40,9 +40,9 @@ export default function Services() {
             className="w-auto mx-auto h-32 md:h-48" 
           />
           <h2 className="font-Josefin-Sans text-xl mt-4">Innovative</h2>
-          <p className="mt-2">Branding builds lasting value - aligning you with stakeholders</p>
+          <p className="mt-2 font-Lora">Branding builds lasting value - aligning you with stakeholders</p>
           <Link
-            className="mt-5 group relative inline-block text-sm font-medium text-white focus:outline-none focus:ring"
+            className="mt-5 group relative inline-block text-sm  font-Josefin-Sans font-medium text-white focus:outline-none focus:ring"
             href="/works/36-incluCityCalgary"
           >
             <span className="absolute inset-0 border border-navbar-bg group-active:border-navbar-bg"></span>
@@ -60,12 +60,12 @@ export default function Services() {
             className="w-auto mx-auto h-36 md:h-52" 
           />
           <h2 className="font-Josefin-Sans text-xl mt-4">Transforming</h2>
-          <p className="mt-2">
+          <p className="mt-2 font-Lora">
             Average attention span: 8.2 seconds. Prioritize yourself, help
             others, and grow together. We can assist.
           </p>
           <Link
-            className="mt-5 group relative inline-block text-sm font-medium text-white focus:outline-none focus:ring"
+            className="mt-5 group relative inline-block text-sm font-Josefin-Sans font-medium text-white focus:outline-none focus:ring"
             href="/works/33-aggudo"
           >
             <span className="absolute inset-0 border border-navbar-bg group-active:border-navbar-bg"></span>

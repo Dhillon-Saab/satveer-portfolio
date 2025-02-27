@@ -4,8 +4,8 @@ export default function Summary() {
   return (
     <section className="pt-10 py-10 bg-neutral-50">
       <div className="container mx-auto text-gray-700 px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64 text-left">
-        <h2 className="font-Lora text-4xl sm:text-5xl lg:text-6xl text-black mb-6">
-          What is Designlōk?
+        <h2 className="font-Josefin-Sans text-4xl sm:text-5xl lg:text-6xl text-black mb-6">
+          What is Project Aananta?
         </h2>
         <p className="mt-4 font-Lora text-lg sm:text-xl space-y-2">
           Founded on the concept of seva, or selfless service, Designlōk

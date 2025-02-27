@@ -22,11 +22,11 @@ export default function ProjectCard({ more, heading, desc, img, align }) {
             <h2 className="text-white font-Josefin-Sans text-3xl md:text-4xl lg:text-5xl text-center md:text-left">
               {heading}
             </h2>
-            <p className="text-white font-extralight text-lg md:text-xl text-center md:text-left mx-auto mt-4 md:mt-5 md:max-w-2/4 hidden md:block">
+            <p className="text-white font-Lora font-thin text-lg md:text-lg text-center md:text-left mx-auto mt-4 md:mt-5 md:max-w-2/4 hidden md:block">
               {desc}
             </p>
             <Link
-              className="inline-block rounded border border-gray-100 bg-gray-100 px-8 py-2 md:px-12 md:py-3 text-sm md:text-md font-medium text-navbar-bg hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-white mt-6 md:mt-8"
+              className="inline-block font-Josefin-Sans rounded border border-gray-100 bg-gray-100 px-8 py-2 md:px-12 md:py-3 text-sm md:text-md font-medium text-navbar-bg hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-white mt-6 md:mt-8"
               href={`/works/${more}`}
             >
               Read More
@@ -40,11 +40,11 @@ export default function ProjectCard({ more, heading, desc, img, align }) {
             <h2 className="text-white font-Josefin-Sans text-3xl md:text-4xl lg:text-5xl text-center md:text-left">
               {heading}
             </h2>
-            <p className="text-white font-extralight text-lg md:text-xl text-center md:text-left mx-auto mt-4 md:mt-5 md:max-w-2/4 hidden md:block">
+            <p className="text-white font-Lora font-thin text-lg md:text-lg text-center md:text-left mx-auto mt-4 md:mt-5 md:max-w-2/4 hidden md:block">
               {desc}
             </p>
             <Link
-              className="inline-block rounded border border-gray-100 bg-gray-100 px-8 py-2 md:px-12 md:py-3 text-sm md:text-md font-medium text-navbar-bg hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-white mt-6 md:mt-8"
+              className="inline-block font-Josefin-Sans rounded border border-gray-100 bg-gray-100 px-8 py-2 md:px-12 md:py-3 text-sm md:text-md font-medium text-navbar-bg hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-white mt-6 md:mt-8"
               href={`/works/${more}`}
             >
               Read More

@@ -1,25 +1,362 @@
+import Image from "next/image";
+import { ImageOverlay } from "./ImageOverlay";
+import ZoomableImage from "./ZoomImage";
+
 const QuestionsChallenges = () => (
   <div>
-    <section className="pt-10 py-10 bg-neutral-50">
-      <div className="container mx-auto text-gray-700 px-64 text-left">
-        <h2 className="font-Lora flex text-7xl mb-10">Questions</h2>
-        <ol className="mt-4 pl-10 list-decimal text-lg space-y-2">
+    <section className="pt-10 py-10 bg-neutral-bg">
+      <div className="container mx-auto text-navbar-bg px-4 md:px-64 text-left">
+        <h2 className="font-Josefin-Sans text-4xl md:text-8xl mb-10">Questions</h2>
+        <ol className="mt-4 pl-10 list-decimal text-lg md:text-xl space-y-2 font-Lora font-extralight">
           <li>How can the customer experience be improved?</li>
-          {/* <li>How can the employee experience be improved?</li> */}
           <li>How will Aggüdo continue its outreach?</li>
         </ol>
       </div>
     </section>
     <section className="py-10 bg-navbar-bg">
-      <div className="container mx-auto text-white px-64 text-left">
-        <h2 className="font-Lora flex text-7xl mb-10">Challenges</h2>
-        <ol className="mt-4 list-none text-lg space-y-2 font-Josefin-Sans">
+      <div className="container mx-auto text-white px-4 md:px-64 text-left">
+        <h2 className="font-Josefin-Sans text-4xl md:text-8xl mb-10">Challenges</h2>
+        <ol className="mt-4 list-none text-lg md:text-xl space-y-2 font-Lora font-extralight">
           <li>
             How can customers and staff feel more involved with the experience
             at Aggüdo?
           </li>
-          <li>How can a company that has been operating for less than two years be encouraged to embrace the ideas of customer research and engagement?</li>
+          <li>
+            How can a company that has been operating for less than two years be
+            encouraged to embrace the ideas of customer research and engagement?
+          </li>
         </ol>
+      </div>
+    </section>
+    <section className="py-10 bg-bg-neutral-bg">
+      <div className="container mx-auto text-navbar-bg px-4 md:px-64 text-left">
+        <h2 className="font-Josefin-Sans text-4xl md:text-8xl mb-10">Solution</h2>
+        <p className="mt-4 text-lg md:text-xl space-y-2 font-Lora font-extralight">
+          The first method in approaching this at any company is to find a point
+          of contact who understands the value of UX, and explain that we come
+          in as a firm that takes a user-centred approach and employs a strategy
+          based on empathy.
+        </p>
+        <p className="mt-4  text-lg md:text-xl space-y-2 font-Lora font-extralight">
+          This included speaking on our credibility and the inroads established
+          in Calgary so far, but going beyond that meant we would have to be
+          unconventional.
+        </p>
+        <ol className="mt-4 pl-10 list-decimal text-lg md:text-xl space-y-2 font-Lora font-extralight">
+          <li>
+            <span className="font-bold">
+              Similar to <u>Robert Cialdini</u>
+            </span>
+            , I took the approach of{" "}
+            <span className="font-bold">
+              working as a barista for two weeks.
+            </span>{" "}
+            During this time, I asked staff what their frustrations were with
+            day-to-day duties. What did the opening and closing procedures look
+            like?
+          </li>
+          <li>
+            In my stint as a barista, I had the opportunity to talk to regulars
+            and asked them what they enjoyed about the experience at Aggudo. It
+            allowed me to identify that customers were frequently leaving cups
+            at the same counter where food was served - unsanitary. Signage in
+            store would have be emphasized as{" "}
+            <span className="font-bold">
+              customers wanted to see more visuals.
+            </span>
+          </li>
+          <li>
+            Related to the previous point,{" "}
+            <span className="font-bold">
+              the creation of a promotional campaign
+            </span>{" "}
+            was essential to the growth of the business.
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section className="py-10 bg-navbar-bg">
+      <div className="container mx-auto text-white px-4 md:px-64 text-left">
+        <h2 className="font-Josefin-Sans text-4xl md:text-8xl mb-10">
+          Ideation Process
+        </h2>
+        <ol className="mt-4  text-lg md:text-xl font-Lora space-y-2 font-extralight">
+          <li>
+            By interviewing the manager and owner, we were able to identify the
+            steps above through learning the aim of Aggüdo.
+          </li>
+          <li className="grid grid-cols-1 md:grid-cols-2 gap-2">
+            <ImageOverlay imageUrl={"/NotePage1.webp"} altText={"NotePage1"} />
+            <ImageOverlay imageUrl={"/NotePage2.webp"} altText={"NotePage2"} />
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section className="py-10 bg-bg-neutral-bg">
+      <div className="container mx-auto text-navbar-bg px-4 md:px-64 text-left">
+        <h2 className="font-Josefin-Sans text-4xl md:text-8xl mb-10">Research</h2>
+        <div className="mb-10">
+          <h3 className="font-Josefin-Sans text-2xl md:text-3xl mb-6">
+            Customer Engagement
+          </h3>
+          <p className="mt-4 text-lg md:text-xl space-y-2 font-Lora font-extralight">
+            A business that lacks direction, and caters to everybody, caters to
+            nobody. A set of interviews were conducted with regulars at the
+            cafe, outlining the process -{" "}
+            <span className="font-bold">how do people engage with Aggüdo?</span>
+          </p>
+          <div className="h-auto w-full md:w-3/4 mx-auto">
+            <ImageOverlay
+              imageUrl={"/CustomerMapAggudo.webp"}
+              altText={"CustomerMap"}
+            />
+            <p className="font-extralight text-sm md:text-base font-Lora text-center">
+              A visualization of a customer&apos;s relationship with Aggudo over
+              time and across different channels.
+            </p>
+          </div>
+        </div>
+        <div>
+          <h3 className="font-Josefin-Sans text-2xl md:text-3xl mb-6">
+            Understanding Customer & Staff Behaviour
+          </h3>
+          <p className="mt-4  text-lg md:text-xl space-y-2 font-Lora font-extralight">
+            Observing cues and asking customers how they felt about the
+            experience allowed for the creation of a visualization that would
+            identify the needs and pain points.
+          </p>
+          <div className="h-auto w-full md:w-3/4 mx-auto">
+            <ImageOverlay
+              imageUrl={"/EmpathyMap.webp"}
+              altText={"EmpathyMap"}
+            />
+            <p className="font-extralight text-sm md:text-thin font-Lora text-center">
+              An identified need was to enhance the menu with promotions.
+              <br />
+              As a painpoint, customers felt like they were left out of the
+              experience
+            </p>
+          </div>
+          <p className="mt-4  text-lg md:text-xl space-y-2 font-Lora font-extralight">
+            Another pain point was that customers often received beverages that
+            were inconsistent, which led to insights on how to better improve
+            the Employee Experience.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section className="py-10 bg-navbar-bg">
+      <div className="container mx-auto text-white px-4 md:px-64 text-left">
+        <h2 className="font-Josefin-Sans text-4xl md:text-8xl mb-10">
+          Creative Approach
+        </h2>
+        <div className="mb-10">
+          <h3 className="font-Josefin-Sans text-2xl md:text-3xl mb-6">
+            Supporting the Staff
+          </h3>
+          <p className="mt-4  text-lg md:text-xl space-y-2 font-Lora font-extralight">
+            Identifying that the staff felt frustrated with tasks that seemed to
+            constantly change, we asked the manager what the onboarding/training
+            process looked like. Aside from a bulleted list on Google Docs,
+            there was a lack of cohesion in the training material for staff.
+          </p>
+          <p className="mt-4  text-lg md:text-xl space-y-2 font-Lora font-extralight">
+            To resolve this, checklists were created, with a signature section
+            at the bottom for staff to feel as though they were more involved.
+          </p>
+          <div className="flex flex-col justify-center items-center gap-2 h-auto w-full mx-auto">
+            <ImageOverlay
+              imageUrl={"/Manual_V5_Page_06.avif"}
+              altText={"Manual_V5_Page_06"}
+            />
+            <p className="font-extralight text-sm md:text-base font-Lora text-center">
+              An example of the ongoing tasks placed behind the bar increased
+              productivity.
+            </p>
+          </div>
+        </div>
+        <div className="mb-10">
+          <h3 className="font-Josefin-Sans text-2xl md:text-3xl mb-6">
+            Enhancing the Employee Experience
+          </h3>
+          <p className="mt-4  text-lg md:text-xl space-y-2 font-Lora font-extralight">
+            Another pain point for both the CX and EX were that drinks were
+            inconsistent. The drink recipe guide was created on a table that was
+            extremely difficult to read, especially in high-pressure situations.
+          </p>
+          <p className="mt-4  text-lg md:text-xl space-y-2 font-Lora font-extralight">
+            Icons were developed and recipe sheets were posted to allow for
+            employees who may have difficulty reading to understand to best
+            prepare drinks for the customer.
+          </p>
+          <div className="flex flex-col justify-center m-4 items-center gap-2 h-auto w-full md:w-3/4 mx-auto">
+            <ImageOverlay
+              imageUrl={"/Non-Espresso Drinks _ PrintReady.webp"}
+              altText={"Non-Espresso Drinks _ PrintReady"}
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className="py-10 bg-bg-neutral-bg">
+      <div className="container mx-auto text-navbar-bg px-4 md:px-64 text-left">
+        <h2 className="font-Josefin-Sans text-4xl md:text-8xl mb-10">Campaign</h2>
+        <div className="mb-10">
+          <h3 className="font-Josefin-Sans text-2xl md:text-3xl mb-6">
+            From Slow Drip to Caffeine Rush
+          </h3>
+          <p className="mt-4  text-lg md:text-xl space-y-2 font-Lora font-extralight">
+            Two more paint points were identified - traffic was the slowest on
+            Monday-Wednesday evenings. Identifying an opportunity for growth,
+            and making use of coffee that would otherwise be thrown out at the
+            end of the night,{" "}
+            <span className="font-bold">
+              we suggested the introduction of a new item - blended ice coffee
+              drinks, known as frappes.
+            </span>
+          </p>
+          <p className="mt-4  text-lg md:text-xl space-y-2 font-Lora font-extralight">
+            Once margins were agreed upon, a promotional price was implemented
+            to increase traffic during those times, with an incentive provided
+            for engaging with the promotion on social media.
+          </p>
+          <div className="flex flex-col justify-center m-4 items-center gap-2 h-auto mx-auto">
+            <ZoomableImage
+              src={"/Aggudo_Post-With Promo.avif"}
+              alt={"CustomerMap"}
+            />
+            <p className="font-extralight text-sm md:text-thin font-Lora text-center">
+              An Instagram post. A story and print version were created as well.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className="py-10 bg-navbar-bg" id="Deliverables">
+      <div className="container mx-auto text-white px-4 md:px-64 text-left">
+        <h2 className="font-Josefin-Sans text-4xl md:text-8xl mb-10">Deliverables</h2>
+        <div className="grid grid-cols-2 items-center justify-center align-middle w-max-[400px] mx-auto w-full gap-5 my-6">
+          <div className="flex items-center justify-center overflow-hidden">
+            <ImageOverlay
+              imageUrl={"/fd7f13_457e431d7d73429695550f3d3c0911b6~mv2.webp"}
+              altText={"InstaPostV1"}
+            />
+          </div>
+          <div className="flex items-center justify-center overflow-hidden">
+
+          <ImageOverlay
+            imageUrl={"/fd7f13_dda4173a51f947758de38644e8a67c6d~mv2.webp"}
+            altText={"InstaPostV2"}
+            />
+            </div>
+            <div className="flex items-center justify-center overflow-hidden">
+
+          <ImageOverlay
+            imageUrl={"/fd7f13_d9109b2ecd7643a9ac0eb77553cfe38f~mv2.webp"}
+            altText={"InstaPostV1"}
+            />
+            </div >
+            <div className="flex items-center justify-center overflow-hidden">
+
+          <ImageOverlay
+            imageUrl={"/fd7f13_8ac8ce63cb894d9db932c72de3dccc2f~mv2.webp"}
+            altText={"InstaPostV2"}
+            />
+            </div>
+          <div className="flex items-center justify-center overflow-hidden">
+
+          <ImageOverlay
+            imageUrl={"/fd7f13_07e5b99438dd4f1daaca1e6dd97103eb~mv2.webp"}
+            altText={"InstaPostV1"}
+            />
+            </div>
+            <div className="flex items-center justify-center overflow-hidden">
+
+          <ImageOverlay
+            imageUrl={"/fd7f13_99bdbe9d7a5b4d319a743144b52aa648~mv2.webp"}
+            altText={"InstaPostV2"}
+            />
+            </div>
+        </div>
+        {/* <div className="flex flex-col items-center gap-5">
+          <div className="flex flex-col md:flex-row gap-5">
+            <ImageOverlay
+              imageUrl={"/fd7f13_457e431d7d73429695550f3d3c0911b6~mv2.webp"}
+              altText={"InstaPostV1"}
+            />
+            <ImageOverlay
+              imageUrl={"/fd7f13_dda4173a51f947758de38644e8a67c6d~mv2.webp"}
+              altText={"InstaPostV2"}
+            />
+          </div>
+          <div className="flex flex-col md:flex-row gap-5">
+            <ImageOverlay
+              imageUrl={"/fd7f13_d9109b2ecd7643a9ac0eb77553cfe38f~mv2.webp"}
+              altText={"InstaPostV1"}
+            />
+            <ImageOverlay
+              imageUrl={"/fd7f13_8ac8ce63cb894d9db932c72de3dccc2f~mv2.webp"}
+              altText={"InstaPostV2"}
+            />
+          </div>
+          <div className="flex flex-col md:flex-row gap-5">
+            <ImageOverlay
+              imageUrl={"/fd7f13_07e5b99438dd4f1daaca1e6dd97103eb~mv2.webp"}
+              altText={"InstaPostV1"}
+            />
+            <ImageOverlay
+              imageUrl={"/fd7f13_99bdbe9d7a5b4d319a743144b52aa648~mv2.webp"}
+              altText={"InstaPostV2"}
+            />
+          </div>
+        </div> */}
+      </div>
+    </section>
+    <section className="pt-10 py-10 bg-neutral-bg">
+      <div className="container mx-auto text-navbar-bg font-Lora px-4 md:px-64 text-left">
+        <div className="flex flex-col md:flex-row">
+          <Image
+            src={"/ManualMockup.avif"}
+            alt="nothing"
+            height={300}
+            width={300}
+          />
+          <div className="mt-4">
+            <p className="mt-4  text-lg md:text-xl space-y-2 font-extralight">
+              Aggudo&apos;s Training Manual. Designed with room for future
+              expansion.
+            </p>
+            <div className="mt-4 md:mt-8">
+              <a
+                href="https://drive.google.com/file/d/1p9MbvSW5AxAuNrnIg0um4ZitApwF1OeE/view?usp=sharing"
+                className="inline-block rounded font-Josefin-Sans bg-navbar-bg px-12 py-3 text-lg font-medium text-white transition hover:bg-slate-600 focus:outline-none focus:ring focus:ring-yellow-400"
+              >
+                Read It Here
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className="py-10 bg-navbar-bg">
+      <div className="container mx-auto text-white px-4 md:px-64 text-left">
+        <h2 className="font-Josefin-Sans text-4xl md:text-8xl mb-10">Results</h2>
+        <p className="mt-4  font-Lora text-lg md:text-xl space-y-2 font-extralight">
+          Through concentrated efforts, the manager at Aggüdo learned how to
+          develop content for social media to best support the campaign. The
+          poster for the campaign would be printed and placed in the window, and
+          this endeavour increased traffic by 1300% from Monday-Wednesday.
+          Customers have continued to engage with the post on social media and
+          walk-ins have increased.
+        </p>
+        <p className="mt-4  font-Lora text-lg md:text-xl space-y-2 font-extralight">
+          As a result of the training manual, drinks are more consistent with
+          fewer requests for remade drinks, and assets were created so that
+          managers could create their own content in the future.
+        </p>
+        <div className="flex flex-col justify-center m-7 items-center gap-2 h-auto w-full mx-auto">
+          <ImageOverlay imageUrl={"/finaphoto2.avif"} altText={"finaphoto2"} />
+        </div>
       </div>
     </section>
   </div>

@@ -1,6 +1,12 @@
 import Link from "next/link";
 import React from "react";
 
+
+const dynamicYear = () => {
+  let date = new Date()
+  return date.getFullYear()
+}
+
 function Footer() {
   return (
     <footer className="bg-gray-100">
@@ -34,7 +40,7 @@ function Footer() {
           </ul> */}
 
           <div className="text-left text-gray-500 text-xs font-Lora flex w-full md:text-sm">
-            ©2025 Project Aanata Consulting All Rights Reserved.
+            ©{dynamicYear()} Project Aanata Consulting All Rights Reserved.
           </div>
 
           <ul className="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">

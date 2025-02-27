@@ -13,8 +13,12 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Project Aananata",
-  description: "Portfolio Website for Satveer Singh and his company project aananta to showcase the past projects.",
+  title: {
+    default: "Project Aananta",
+    template: "%s - Project Aananta"
+  },
+  description:
+    "Portfolio Website for Satveer Singh and his company Project Aananta to showcase the past projects and to build more confidence in the clients.",
 };
 
 export default function RootLayout({ children }) {
